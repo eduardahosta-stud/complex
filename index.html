@@ -3,55 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Варіант 2 - Веб-сторінка</title>
+    <title>Retro PC Enthusiast</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <!-- Меню (Menu) -->
-        <header class="top-nav">
-            <div class="menu-left">Меню</div>
+        <nav class="top-nav">
+            <div class="menu-left">RetroPC Hub / Legends</div>
             <div class="menu-right"></div>
+        </nav>
+
+        <header class="main-header">
+            <h2>Ретро-залізо та PC-ентузіазм</h2>
         </header>
 
-        <!-- Заголовок (Header) -->
-        <section class="main-header">
-            <h1>Заголовок</h1>
-        </section>
-
-        <!-- Основний вміст (Main) з 5 колонками -->
         <main class="content-grid">
-            <!-- Стовпець 1 -->
-            <article class="card">
-                <div class="image-box">Малюнок</div>
-                <div class="text-content">Основний вміст</div>
-            </article>
-            <!-- Стовпець 2 -->
-            <article class="card">
-                <div class="image-box">Малюнок</div>
-                <div class="text-content">Основний вміст</div>
-            </article>
-            <!-- Стовпець 3 -->
-            <article class="card">
-                <div class="image-box">Малюнок</div>
-                <div class="text-content">Основний вміст</div>
-            </article>
-            <!-- Стовпець 4 -->
-            <article class="card">
-                <div class="image-box">Малюнок</div>
-                <div class="text-content">Основний вміст</div>
-            </article>
-            <!-- Стовпець 5 -->
-            <article class="card">
-                <div class="image-box">Малюнок</div>
-                <div class="text-content">Основний вміст</div>
-            </article>
+            <!-- Картка 1 -->
+            <div class="card">
+                <div class="image-box item-1"></div>
+                <div class="text-content">
+                    <h3>3dfx Voodoo 1</h3>
+                    <p>Перша карта з справжнім 3D.</p>
+                </div>
+            </div>
+            <!-- Картка 2 -->
+            <div class="card">
+                <div class="image-box item-2"></div>
+                <div class="text-content">
+                    <h3>Pentium III</h3>
+                    <p>Легендарне ядро Tualatin.</p>
+                </div>
+            </div>
+            <!-- Картка 3 -->
+            <div class="card">
+                <div class="image-box item-3"></div>
+                <div class="text-content">
+                    <h3>IBM Model M</h3>
+                    <p>Класика механічних клавіатур.</p>
+                </div>
+            </div>
+            <!-- Картка 4 -->
+            <div class="card">
+                <div class="image-box item-4"></div>
+                <div class="text-content">
+                    <h3>Sound Blaster 16</h3>
+                    <p>Золотий стандарт звуку 90-х.</p>
+                </div>
+            </div>
+            <!-- Картка 5 -->
+            <div class="card">
+                <div class="image-box item-5"></div>
+                <div class="text-content">
+                    <h3>Athlon XP</h3>
+                    <p>Socket A герой від AMD.</p>
+                </div>
+            </div>
         </main>
 
-        <!-- Підвал (Footer) -->
-        <footer class="main-footer">
-            Підвал
-        </footer>
+        <footer class="main-footer">© 2026 PC Lab</footer>
     </div>
+
+    <!-- Модальне вікно -->
+    <div id="imgModal" class="modal">
+        <div id="modalImg" class="modal-content"></div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,85 +1,67 @@
 body {
     background-color: #a8cf5f;
-    font-family: Arial, sans-serif;
+    font-family: sans-serif;
     margin: 20px;
     display: flex;
     justify-content: center;
 }
 
-.container {
-    width: 100%;
-    max-width: 1200px;
-}
+.container { width: 100%; max-width: 1200px; }
 
-.top-nav {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 30px;
-}
+.top-nav { display: flex; justify-content: space-between; margin-bottom: 30px; }
 
-.menu-left {
-    background-color: #808080;
-    width: 60%;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    padding-left: 15px;
-    color: white;
-}
+.menu-left { background-color: #808080; width: 60%; height: 40px; color: white; display: flex; align-items: center; padding-left: 15px; }
 
-.menu-right {
-    background-color: #808080;
-    width: 15%;
-    height: 40px;
-}
+.menu-right { background-color: #808080; width: 15%; height: 40px; }
 
 .main-header {
     background-color: #e55e6a;
-    width: 40%;
-    height: 50px;
-    margin: 0 auto 40px auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 40%; height: 60px;
+    margin: 0 auto 40px;
+    display: flex; justify-content: center; align-items: center;
     color: white;
-    text-align: center;
 }
 
 .content-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 15px;
-    margin-bottom: 40px;
 }
 
-.card {
-    background-color: #e6e6e6;
-    border: 1px solid #333;
-    min-height: 400px;
-    padding: 10px;
+.card { background-color: #e6e6e6; border: 1px solid #333; padding: 10px; min-height: 400px; }
+
+/* Загальні стилі для блоків з фото */
+.image-box { 
+    background-color: #b4c7e7; 
+    height: 120px; 
+    cursor: pointer; 
+    background-size: cover; 
+    background-position: center; 
 }
 
-.image-box {
-    background-color: #b4c7e7;
-    height: 100px;
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 0.9em;
+/* Прив'язка конкретних фото до класів */
+.item-1 { background-image: url('images/voodoo.jpg'); }
+.item-2 { background-image: url('images/p3.jpg'); }
+.item-3 { background-image: url('images/modelm.jpg'); }
+.item-4 { background-image: url('images/sb16.jpg'); }
+.item-5 { background-image: url('images/athlon.jpg'); }
+
+.text-content { text-align: center; margin-top: 15px; }
+
+.main-footer { background-color: #b38b6d; height: 60px; margin-top: 40px; display: flex; justify-content: center; align-items: center; color: white; }
+
+/* Modal */
+.modal {
+    display: none; position: fixed; z-index: 100;
+    left: 0; top: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.9); align-items: center; justify-content: center;
 }
 
-.text-content {
-    text-align: center;
-    padding-top: 20px;
-}
-
-.main-footer {
-    background-color: #b38b6d;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-weight: bold;
+.modal-content { 
+    width: 80%; 
+    height: 80%; 
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    border: 5px solid white; 
 }
