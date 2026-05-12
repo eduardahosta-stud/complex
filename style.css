@@ -1,10 +1,11 @@
 body {
-    background-color: #a8cf5f;
+background-image: url('mnitor_bg.png');
+    background-size: cover;
+    background-position: center;
     font-family: sans-serif;
     margin: 20px;
     display: flex;
     justify-content: center;
-}
 
 .container { width: 100%; max-width: 1200px; }
 
@@ -12,7 +13,7 @@ body {
 
 .menu-left { background-color: #808080; width: 60%; height: 40px; color: white; display: flex; align-items: center; padding-left: 15px; }
 
-.menu-right { background-color: #808080; width: 15%; height: 40px; }
+.menu-right { background-color: #808080; width: 15%; height: 40px; color: white; display: flex; align-items: center; padding-left: 15px; }
 
 .main-header {
     background-color: #e55e6a;
@@ -30,7 +31,7 @@ body {
 
 .card { background-color: #e6e6e6; border: 1px solid #333; padding: 10px; min-height: 400px; }
 
-/* Загальні стилі для блоків з фото */
+
 .image-box { 
     background-color: #b4c7e7; 
     height: 120px; 
@@ -39,8 +40,8 @@ body {
     background-position: center; 
 }
 
-/* Прив'язка конкретних фото до класів */
-.item-1 { background-image: url('images/voodoo.jpg'); }
+
+.item-1 { background-image: url('images/voodoo.png'); }
 .item-2 { background-image: url('images/p3.jpg'); }
 .item-3 { background-image: url('images/modelm.jpg'); }
 .item-4 { background-image: url('images/sb16.jpg'); }
