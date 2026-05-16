@@ -2,71 +2,75 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Retro PC Enthusiast</title>
+    <title>Hardware Hub - Головна</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <div class="container">
-        <nav class="top-nav">
-            <div class="menu-left">RetroPC Hub / Legends</div>
-            <div class="menu-right">Меню</div>
+
+
+    <header class="menu-bar">
+        <nav class="menu-left">
+            <a href="about.html">Про нас</a>
         </nav>
+        <nav class="menu-right">
+            <a href="index.html" class="active">Головна</a>
+        </nav>
+    </header>
 
-        <header class="main-header">
-            <h2>Ретро-залізо та PC-ентузіазм</h2>
-        </header>
 
-        <main class="content-grid">
-            <!-- Картка 1 -->
-            <div class="card">
-                <div class="image-box item-1"></div>
-                <div class="text-content">
-                    <h3>3dfx Voodoo 1</h3>
-                    <p>Перша карта з справжнім 3D.</p>
-                </div>
-            </div>
-            <!-- Картка 2 -->
-            <div class="card">
-                <div class="image-box item-2"></div>
-                <div class="text-content">
-                    <h3>Pentium III</h3>
-                    <p>Легендарне ядро Tualatin.</p>
-                </div>
-            </div>
-            <!-- Картка 3 -->
-            <div class="card">
-                <div class="image-box item-3"></div>
-                <div class="text-content">
-                    <h3>IBM Model M</h3>
-                    <p>Класика механічних клавіатур.</p>
-                </div>
-            </div>
-            <!-- Картка 4 -->
-            <div class="card">
-                <div class="image-box item-4"></div>
-                <div class="text-content">
-                    <h3>Sound Blaster 16</h3>
-                    <p>Золотий стандарт звуку 90-х.</p>
-                </div>
-            </div>
-            <!-- Картка 5 -->
-            <div class="card">
-                <div class="image-box item-5"></div>
-                <div class="text-content">
-                    <h3>Athlon XP</h3>
-                    <p>Socket A герой від AMD.</p>
-                </div>
-            </div>
-        </main>
-
-        <footer class="main-footer">© 2026 PC Lab</footer>
+    <div class="main-header">
+        <h1 class="logo">HardwareHub</h1>
     </div>
 
-    <!-- Модальне вікно -->
-    <div id="imgModal" class="modal">
-        <div id="modalImg" class="modal-content"></div>
+
+    <div class="subheader">
+        <h2>Світ сучасних технологій та заліза</h2>
+    </div>
+
+
+    <main class="main-content">
+        <div class="card">
+            <img src="images/ryzen.png" alt="Довговічність AMD Ryzen" class="trigger">
+            <h3>Довговічність AMD Ryzen</h3>
+            <p>Аналіз архітектури та температурних режимів процесорів.</p>
+        </div>
+
+        <div class="card">
+            <img src="images/radeon.png" alt="Еволюція Radeon" class="trigger">
+            <h3>Еволюція Radeon</h3>
+            <p>Як змінювалася продуктивність відеокарт AMD.</p>
+        </div>
+
+        <div class="card">
+            <img src="images/custom_pc.png" alt="Збірка PC 2026" class="trigger">
+            <h3>Збірка PC 2026</h3>
+            <p>Оптимальні конфігурації для роботи та геймінгу.</p>
+        </div>
+
+        <div class="card">
+            <img src="images/gaming.png" alt="Конфіг для CS2" class="trigger">
+            <h3>Конфіг для CS2</h3>
+            <p>Налаштування системи для максимального FPS.</p>
+        </div>
+
+        <div class="card">
+            <img src="images/microelectronics.png" alt="Мікроелектроніка" class="trigger">
+            <h3>Мікроелектроніка</h3>
+            <p>Фундаментальні основи розробки сучасних чіпів.</p>
+        </div>
+    </main>
+
+ 
+    <footer class="footer">
+        <p>&copy; 2026 HardwareHub. Усі права захищені.</p>
+    </footer>
+
+
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img id="img01" class="modal-content">
+        <div id="caption"></div>
     </div>
 
     <script src="script.js"></script>

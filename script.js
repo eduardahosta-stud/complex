@@ -1,18 +1,21 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const modal = document.getElementById('imgModal');
-    const modalImg = document.getElementById('modalImg');
-    const cards = document.querySelectorAll('.image-box');
+var modal = document.getElementById("myModal");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
 
-    cards.forEach(card => {
-        card.addEventListener('click', () => {
-            // Отримуємо стиль background-image
-            const bg = getComputedStyle(card).backgroundImage;
-            modal.style.display = 'flex';
-            modalImg.style.backgroundImage = bg;
-        });
-    });
 
-    modal.addEventListener('click', () => {
-        modal.style.display = 'none';
-    });
+var images = document.querySelectorAll(".trigger");
+
+
+images.forEach(function(img) {
+    img.onclick = function() {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;   
+    }
 });
+
+
+var span = document.getElementsByClassName("close")[0];
+span.onclick = function() {
+    modal.style.display = "none";
+}
